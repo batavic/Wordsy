@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title> Wordsy </title>
+
+        <!-- GOOGLE FONTS -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Modak&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+        <!-- STYLESHEET -->
+        <link rel="stylesheet" href="style.css">
+
+        <!-- CONFETTI -->
+        <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="play-page" class="landing-page">
+
+            <h1> Wordsy </h1>
+            
+            <div class="game-details">
+                <h2 id="guesses"> Guesses: 0</h2>
+                <h2 id="score"> Score: </h2>
+            </div>
+
+        
+            <div class="guessed-word">
+                <div class="letter">
+                    <p> </p>
+                </div>
+                <div class="letter">
+                    <p> </p>
+                </div>
+                <div class="letter">
+                    <p> </p>
+                </div>
+                <div class="letter">
+                    <p> </p>
+                </div>
+                <div class="letter">
+                    <p> </p>
+                </div>
+            </div>
+
+            <div class="keyboard">
+
+                <div class="row">
+                    <button class="keyboard-button" data-key="Q">Q</button>
+                    <button class="keyboard-button" data-key="W">W</button>
+                    <button class="keyboard-button" data-key="E">E</button>
+                    <button class="keyboard-button" data-key="R">R</button>
+                    <button class="keyboard-button" data-key="T">T</button>
+                    <button class="keyboard-button" data-key="Y">Y</button>
+                    <button class="keyboard-button" data-key="U">U</button>
+                    <button class="keyboard-button" data-key="I">I</button>
+                    <button class="keyboard-button" data-key="O">O</button>
+                    <button class="keyboard-button" data-key="P">P</button>
+                </div>
+
+                <div class="row">
+                    <button class="keyboard-button" data-key="A">A</button>
+                    <button class="keyboard-button" data-key="S">S</button>
+                    <button class="keyboard-button" data-key="D">D</button>
+                    <button class="keyboard-button" data-key="F">F</button>
+                    <button class="keyboard-button" data-key="G">G</button>
+                    <button class="keyboard-button" data-key="H">H</button>
+                    <button class="keyboard-button" data-key="J">J</button>
+                    <button class="keyboard-button" data-key="K">K</button>
+                    <button class="keyboard-button" data-key="L">L</button>
+                </div>
+
+                <div class="row">
+                    <button class="keyboard-button" data-key="Z">Z</button>
+                    <button class="keyboard-button" data-key="X">X</button>
+                    <button class="keyboard-button" data-key="C">C</button>
+                    <button class="keyboard-button" data-key="V">V</button>
+                    <button class="keyboard-button" data-key="B">B</button>
+                    <button class="keyboard-button" data-key="N">N</button>
+                    <button class="keyboard-button" data-key="M">M</button>
+                </div>
+
+                <div class="row submit-row">
+                    <button class="keyboard-button" data-key="ENTER">ENTER</button>
+                    <button class="keyboard-button" data-key="DELETE">DELETE</button>
+                </div>
+
+            </div>
+
+            <div class="win-popup hidden">
+                <p id="win-title"> 🎊 Congratulations! 🎊 </p>
+                <p id="win-text"> You guessed the word in x tries! </p>
+                <a id="replay" class="play-button" href="play.html"> Play Again </a>
+            </div>
+
+            <div class="guess-history">
+                <div class="guess-history-title">
+                    <p> Guess History </p>
+                </div>
+                <div class="scrollable-list">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <script type="module" src="script.js"></script>
+
+    </body>
+</html>
