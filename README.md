@@ -1,1 +1,2 @@
-Wordsy is a simple word-puzzle game inspired by Wordle.
+Wordsy is a simple word-puzzle game inspired by Wordle. 
+How to play: A random 5-letter word is chosen from a lengthy list, and the user has to guess it to win the game. Based on the user's previous guesses, the game will provide hints at which letters were correctly guessed and positioned. There is not a limited number of attempts to find the word, but the game will display how many attempts it took to win and uses sessionStorage to keep track of how many words were guessed correctly in a row.
